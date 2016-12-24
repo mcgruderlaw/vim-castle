@@ -119,9 +119,9 @@ set dictionary+=/usr/share/dict/cracklib-small "use standard dictionary
 set thesaurus+=/home/dmc/.vim/thesaurus/files/mthesaur.txt
 
 nnoremap <leader>f :echo expand("%:p")<cr>
-nnoremap <leader>ev :vsp $HOME/.homesick/repos/dotfiles/home/.vimrc<cr>
-nnoremap <leader>sv :source $HOME/.homesick/repos/dotfiles/home/.vimrc<cr>
-nnoremap <leader>eb :vsp $HOME/.homesick/repos/dotfiles/home/.bashrc<cr>
+nnoremap <leader>ev :vsp $HOME/.homesick/repos/vim-castle/home/.vimrc<cr>
+nnoremap <leader>sv :source $HOME/.homesick/repos/vim-castle/home/.vimrc<cr>
+nnoremap <leader>eb :vsp $HOME/.homesick/repos/bash-castle/home/.bashrc<cr>
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-l> <c-w>l
@@ -142,7 +142,7 @@ nnoremap <leader>tt :TTarget<CR>
 nnoremap <leader>TT :TTemplate<CR>
 nnoremap <leader>sp :!aspell check %<CR>
 nnoremap <leader>ca :e $HOME/Documents/ofc/Cases/<CR>
-nnoremap <leader>ho :e $HOME/.homesick/repos/dotfiles/home/<CR>
+nnoremap <leader>ho :e $HOME/.homesick/repos/<CR>
 nnoremap <leader>no :e $HOME/Documents/Notes/<CR>
 nnoremap / /\v
 "Sentence Junctions
