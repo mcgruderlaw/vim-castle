@@ -188,12 +188,12 @@ let g:openbrowser_search_engines = {
 	  \    'favorite': 'http://duckduckgo.com/?q={query}'
 	  \}
 let g:netrw_nogx = 1 " disable netrw's gx mapping.
-let g:netrw_banner = 1 
+let g:netrw_banner = 0
 let g:netrw_localcopycmd ="cp"
 let g:netrw_localcopydircmd ="cp -R"
 let g:netrw_keepdir= 0
 let g:netrw_rsync_cmd="rsync -a --delete -e ssh"
-let g:netrw_liststyle= 0
+let g:netrw_liststyle= 3
 nnoremap gx <Plug>(openbrowser-smart-search)
 vnoremap gx <Plug>(openbrowser-smart-search)
 
