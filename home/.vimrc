@@ -80,7 +80,6 @@ set statusline=\"%f\"\ \ \ %m%r%h%w%y\ \ %=\ %l,%L\ \ \ %c\ \ \ %p%%
 "    set statusline+=%*
 "	set statusline+=%{ObsessionStatus()}
 set showmatch           " highlight matching [{()}]
-set showmatch           " highlight matching [{()}]
 set wildmenu            " visual autocomplete for command menu
 set foldenable          " enable folding
 set foldlevelstart=10   " open most folds by default
@@ -93,6 +92,7 @@ set equalprg=''
 set incsearch
 set complete=.,k,w,b,u,t,i
 set omnifunc=syntaxcomplete#Complete
+set path+=**
 
 " Syntastic Settings
 "set statusline+=%#warningmsg#
@@ -301,7 +301,7 @@ set ruler
 set tags=./tags;
 let g:easytags_dynamic_files = 1
 
-set autochdir
+" set autochdir
 " let NERDTreeChDirMode=2
 " nnoremap <leader>n :NERDTree .<CR>:set number<CR>
 
@@ -313,7 +313,7 @@ set softtabstop=4   " number of spaces in tab when editing
 
 "let g:solarized_termcolors=256
  
-set background=light
+set background=dark
 "g:solarized_termcolors = 16
 "g:solarized_termtrans = 1
 "g:solarized_degrade = 0 | 1 
