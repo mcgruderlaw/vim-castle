@@ -547,7 +547,7 @@ nnoremap gO O<ESC>j
 inoremap <C-u> <esc>bveUe
 nnoremap <C-u> bveUe
 
-:command! -complete=file -nargs=1 Rpdf :r !pdftotext -nopgbrk <q-args> - |fmt -csw78
+":command! -complete=file -nargs=1 Rpdf :r !pdftotext -nopgbrk <q-args> - |fmt -csw78
 
 autocmd BufReadPre *.doc set ro
 autocmd BufReadPre *.doc set hlsearch!
@@ -564,6 +564,11 @@ autocmd BufReadPost *.rtf %!catdoc "%"
 autocmd BufReadPre *.RTF set ro
 autocmd BufReadPre *.RTF set hlsearch!
 autocmd BufReadPost *.RTF %!catdoc "%"
+
+augroup nonvim
+     au!
+	 au BufRead *.png,*.jpg,*.pdf,*.gif,*.xls*,*.ppt* sil exe "!xdg-open " . shellescape(expand("%:p")) | bd | let &ft=&ft
+augroup end
 
 au VimResized * :wincmd =
 
