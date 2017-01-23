@@ -59,6 +59,7 @@ Plugin 'tpope/vim-vinegar'
 Plugin 'vim-scripts/taglist.vim'
 Plugin 'chrisbra/unicode.vim'
 Plugin 'amperser/proselint', {'rtp': 'plugins/vim/syntastic_proselint/'}
+Plugin 'etnadji/vim-epub'
 
 call vundle#end()
 
