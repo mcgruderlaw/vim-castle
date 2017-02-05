@@ -621,6 +621,8 @@ augroup nonvim
 	 au BufRead *.png,*.jpg,*.pdf,*.gif,*.xls*,*.ppt* sil exe "!xdg-open " . shellescape(expand("%:p")) | bd | let &ft=&ft
 augroup end
 
+au BufReadCmd *.epub call zip#Browse(expand("<amatch>"))
+
 au VimResized * :wincmd =
 
 "nnoremap <leader>gq :%!pandoc
