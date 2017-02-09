@@ -297,11 +297,11 @@ let g:Tex_GotoError = 1
 
 let g:pandoc#command#autoexec_on_writes = 1
 let g:pandoc#command#latex_engine = "pdflatex"
-let g:pandoc#formatting#smart_autoformat_on_cursormoved = 1
+let g:pandoc#formatting#smart_autoformat_on_cursormoved = 0
 let g:pandoc#command#autoexec_command = "Pandoc pdf"
-let g:pandoc#formatting#mode = "hA"
-let g:pandoc#formatting#textwidth = 72
-let g:pandoc#formatting#equalprg = "pandoc -t markdown --reference-links [--columns {g:pandoc#formatting#textwidth}|no-wrap]"
+let g:pandoc#formatting#mode = "sA"
+let g:pandoc#formatting#textwidth = 79
+let g:pandoc#formatting#equalprg = "pandoc -t markdown --reference-links [--columns {g:pandoc#formatting#textwidth}|--wrap=none]"
 let g:pandoc#spell#enabled = 1
 
 
@@ -388,7 +388,6 @@ let g:ycm_filetype_blacklist = {
         \ 'notes' : 1,
         \ 'unite' : 1,
         \ 'vimwiki' : 1,
-        \ 'pandoc' : 1,
         \ 'infolog' : 1,
         \ 'mail' : 1
         \}
