@@ -8,8 +8,8 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +206 ~/.homesick/repos/dotfiles/home/.tmux.conf
-badd +299 ~/.homesick/repos/dotfiles/home/.vimrc
+badd +206 .tmux.conf
+badd +299 .vimrc
 badd +40 ~/Documents/ofc/Cases/PittsEstate/ltr/ltrhd.tex
 badd +13 ~/.Xresources
 badd +1 ~/__EVERVIM_LIST__
@@ -31,12 +31,12 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=10
 setlocal fen
-let s:l = 23 - ((22 * winheight(0) + 21) / 43)
+let s:l = 1 - ((0 * winheight(0) + 29) / 59)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-23
-normal! 021|
+1
+normal! 0
 lcd ~/.evervim
 tabnext 1
 if exists('s:wipebuf')
