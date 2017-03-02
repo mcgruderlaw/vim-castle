@@ -312,7 +312,7 @@ set number
 
 set laststatus=0
 set list
-set listchars=tab:→\ ,eol:¬
+set listchars=tab:▸\ ,eol:¬
 "set listchars=eol:$
 set showcmd
 "set splitbelow
