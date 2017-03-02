@@ -320,7 +320,7 @@ set showcmd
 set wildmode=list:longest,list:full
 " Necessary order
 set linebreak
-set textwidth=74
+set textwidth=0
 set display=lastline
 set formatoptions=tcq
 " set wrapmargin=5
@@ -348,7 +348,7 @@ let g:easytags_dynamic_files = 1
 
 syntax enable
 set tabstop=4       " number of visual spaces per TAB
-set softtabstop=4   " number of spaces in tab when editing
+"set softtabstop=4   " number of spaces in tab when editing
 "set expandtab       " tabs are spaces
 "set <C-v><Tab>      " for Tab character
 
