@@ -83,7 +83,7 @@ set statusline=\"%f\"\ \ \ %m%r%h%w%y\ \ %=\ %l,%L\ \ \ %c\ \ \ %p%%
 set showmatch           " highlight matching [{()}]
 set wildmenu            " visual autocomplete for command menu
 set foldenable          " enable folding
-set foldlevelstart=10   " open most folds by default
+"set foldlevelstart=10   " open most folds by default if 10
 set foldnestmax=10      " 10 nested fold max
 set foldmethod=indent   " fold based on indent level
 set showcmd
