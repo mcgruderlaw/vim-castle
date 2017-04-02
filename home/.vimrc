@@ -295,7 +295,7 @@ let g:Tex_MultipleCompileFormats='dvi,pdf'
 let g:Tex_ViewRule_pdf = 'zathura'
 let g:Tex_GotoError = 1
 
-let g:pandoc#command#autoexec_on_writes = 1
+let g:pandoc#command#autoexec_on_writes = 0
 let g:pandoc#command#latex_engine = "pdflatex"
 let g:pandoc#formatting#smart_autoformat_on_cursormoved = 0
 let g:pandoc#command#autoexec_command = "Pandoc pdf"
