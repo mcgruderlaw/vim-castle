@@ -251,11 +251,11 @@ nmap br <Plug>(openbrowser-smart-search)
 vmap br <Plug>(openbrowser-smart-search)
 
 "For Statusline
-"set encoding=utf-8
+set encoding=utf-8
 "set t_Co=256
 "set fillchars+=stl:\ ,stlnc:\
 "set term=xterm-256color
-"set termencoding=utf-8
+set termencoding=utf-8
 function! AirlineThemePatch(palette)
           let a:palette.accents.bold_yellow = [ '#ffffff', '', 0, '', 'bold' ]
 endfunction
@@ -313,7 +313,7 @@ set number
 
 set laststatus=0
 set list
-set listchars=tab:▸\ ,eol:¬
+set listchars=tab:►\ ,eol:¬
 "set listchars=eol:$
 set showcmd
 "set splitbelow
