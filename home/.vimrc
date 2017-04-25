@@ -187,6 +187,9 @@ nnoremap <leader>ca :e $HOME/Documents/ofc/Cases/<CR>
 nnoremap <leader>ho :e $HOME/.homesick/repos/<CR>
 nnoremap <leader>no :e $HOME/Documents/Notes/<CR>
 nnoremap / /\v
+nnoremap <leader>fc :find $CASES<CR>
+nnoremap <leader>fp :find /etc/portage/<CR>
+
 "Sentence Junctions
 nnoremap fc. r.wvUb
 nnoremap fc, r,wvub
