@@ -49,7 +49,7 @@ Plugin 'Valloric/YouCompleteMe'
 " Plugin 'noahfrederick/vim-noctu'
 " Plugin 'noahfrederick/vim-hemisu'
 Plugin 'jonathanfilip/lucius'
-Plugin 'tpope/vim-vinegar'
+" Plugin 'tpope/vim-vinegar'
 " Plugin 'bling/vim-airline'
 " Plugin 'bling/vim-bufferline'
 " Plugin 'honza/vim-snippets'
@@ -189,6 +189,7 @@ nnoremap <leader>ho :e $HOME/.homesick/repos/<CR>
 nnoremap <leader>no :e $HOME/Documents/Notes/<CR>
 nnoremap / /\v
 nnoremap <leader>fc :find $CASES<CR>
+nnoremap <leader>fn :find $NOTES<CR>
 nnoremap <leader>fp :find /etc/portage/<CR>
 
 "Sentence Junctions
@@ -239,9 +240,10 @@ let g:netrw_localcopycmd ="cp"
 let g:netrw_localcopydircmd ="cp -R"
 let g:netrw_keepdir= 0
 let g:netrw_rsync_cmd="rsync -a --delete -e ssh"
-let g:netrw_liststyle= 3
+let g:netrw_liststyle= 0
 let g:netrw_list_hide= '\(^\|\s\s\)\zs\.\S\+'
 let g:netrw_hide=1
+let g:netrw_sizestyle="H"
 nnoremap gx <Plug>(openbrowser-smart-search)
 vnoremap gx <Plug>(openbrowser-smart-search)
 
