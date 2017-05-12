@@ -854,7 +854,6 @@ python << endPython
 
 import glob, os, shutil
 
-
 shutil.copytree('/home/dmc/Documents/ofc/ltr', 'ltr', ignore = shutil.ignore_patterns('.*'))
 
 endPython
