@@ -375,7 +375,7 @@ set background=dark
 "g:solarized_contrast = "normal"| "high" or "low"
 "g:solarized_visibility= "normal"| "high" or "low"
 call togglebg#map("<F8>")
-colorscheme solarized
+colorscheme hipster
 "LuciusDarkHighContrast
 
 "solarized hemisu noctu hipster lucius skittles_dark elflord badwolf starbucks molokai Tomorrow
