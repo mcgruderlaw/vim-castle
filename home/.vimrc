@@ -305,6 +305,7 @@ let g:Tex_CompileRule_pdf = 'pdflatex --synctex=-1 -src-specials -interaction=no
 let g:Tex_MultipleCompileFormats='dvi,pdf'
 let g:Tex_ViewRule_pdf = 'zathura'
 let g:Tex_GotoError = 1
+let g:Tex_CustomTemplateDirectory = '/home/dmc/.latex_templates'
 
 let g:pandoc#command#autoexec_on_writes = 0
 let g:pandoc#command#latex_engine = "pdflatex"
