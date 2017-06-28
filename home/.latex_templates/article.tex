@@ -1,0 +1,37 @@
+<+	+>	!comp!	!exe!
+%        File: !comp!expand("%:p:t")!comp!
+%     Created: !comp!strftime("%a %b %d %I:00 %p %Y ").substitute(strftime('%Z'), '\<\(\w\)\(\w*\)\>\(\W\|$\)', '\1', 'g')!comp!
+% Last Change: !comp!strftime("%a %b %d %I:00 %p %Y ").substitute(strftime('%Z'), '\<\(\w\)\(\w*\)\>\(\W\|$\)', '\1', 'g')!comp!
+%
+\documentclass[12pt,letterpaper,oneside]{article}
+\usepackage{graphicx}
+\usepackage{ifpdf}
+\ifpdf
+    % put here packages only for the PDF:
+    \DeclareGraphicsExtensions{.pdf,.png,.jpg,.mps}
+    \usepackage{hyperref}
+\else
+    % put here packages only for the DVI:
+\fi
+
+% All other packages:
+
+\usepackage{indentfirst}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{outlines}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{hanging}
+\usepackage{blindtext}
+\usepackage{easylist}
+
+\title{ <++>}
+\author{David E. McGruder}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+<++>
+\end{document}
