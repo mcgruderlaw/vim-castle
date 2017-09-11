@@ -4,63 +4,29 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
-Plugin 'gmarik/Vundle.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'godlygeek/tabular'
-Plugin 'waylan/Python-Markdown'
-Plugin 'poise/python'
-Plugin 'vim-scripts/python.vim'
-Plugin 'klen/python-mode'
-Plugin 'Lokaltog/powerline-fonts'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'tyru/open-browser.vim'
-Plugin 'scrooloose/syntastic'
-" Plugin 'scrooloose/nerdtree'
-Plugin 'hallison/vim-markdown'
-Plugin 'flazz/vim-colorschemes'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'amperser/proselint', {'rtp': 'plugins/vim/syntastic_proselint/'}
 Plugin 'astrumas/evervim'
-Plugin 'VitaliyRodnenko/geeknote'
-Plugin 'vim-scripts/ScrollColors'
-Plugin 'yuratomo/w3m.vim'
-" Plugin 'Lokaltog/vim-easymotion'
-Plugin 'kien/ctrlp.vim'
-Plugin 'vimoutliner/vimoutliner'
-Plugin 'SirVer/ultisnips'
-" Plugin 'themoken/canto-next'
-" Plugin 'sjl/clam.vim'
-Plugin 'mileszs/ack.vim'
-Plugin 'rosenfeld/conque-term'
-Plugin 'vim-scripts/Gundo'
-Plugin 'vim-scripts/ag.vim'
-Plugin 'vim-pandoc/vim-pandoc'
-Plugin 'vim-pandoc/vim-pandoc-syntax'
-Plugin 'itchyny/vim-gitbranch'
-" Plugin 'mikewest/vimroom'
-Plugin 'xolox/vim-easytags'
-Plugin 'xolox/vim-misc'
-" Plugin 'psyrendust/dedrm-ebook-tools'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-obsession'
 Plugin 'gerw/vim-latex-suite'
 Plugin 'gerw/vim-tex-syntax'
-Plugin 'stefandtw/quickfix-reflector.vim'
+Plugin 'gmarik/Vundle.vim'
+Plugin 'godlygeek/tabular'
+Plugin 'klen/python-mode'
+Plugin 'scrooloose/syntastic'
+Plugin 'SirVer/ultisnips'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-obsession'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-vinegar'
+Plugin 'tyru/open-browser.vim'
 Plugin 'Valloric/YouCompleteMe'
-" Plugin 'noahfrederick/vim-noctu'
-" Plugin 'noahfrederick/vim-hemisu'
-Plugin 'jonathanfilip/lucius'
-" Plugin 'tpope/vim-vinegar'
-" Plugin 'bling/vim-airline'
-" Plugin 'bling/vim-bufferline'
-" Plugin 'honza/vim-snippets'
-" Plugin 'themoken/canto-curses'
-" Plugin 'vim-scripts/Command-T'
-" Plugin 'maciakl/vim-neatstatus.git'
-Plugin 'vim-scripts/taglist.vim'
-Plugin 'chrisbra/unicode.vim'
-Plugin 'amperser/proselint', {'rtp': 'plugins/vim/syntastic_proselint/'}
-Plugin 'etnadji/vim-epub'
-
+Plugin 'vim-pandoc/vim-pandoc'
+Plugin 'vim-pandoc/vim-pandoc-syntax'
+Plugin 'vim-scripts/ag.vim'
+Plugin 'vim-scripts/Gundo'
+Plugin 'xolox/vim-easytags'
+Plugin 'xolox/vim-misc'
 call vundle#end()
 
 filetype plugin indent on
@@ -353,6 +319,7 @@ set ruler
 
 set tags=./tags;
 let g:easytags_dynamic_files = 1
+let g:easytags_suppress_ctags_warning = 1
 
 " set autochdir
 " let NERDTreeChDirMode=2
@@ -389,7 +356,7 @@ colorscheme solarized
 nnoremap <F4> :GundoToggle<CR>
 
 "YouCompleteMe Settings
-"let g:ycm_server_python_interpreter = 'python3'
+let g:ycm_server_python_interpreter = 'python2'
 let g:ycm_seed_identifiers_with_syntax = 1
 let g:ycm_complete_in_comments = 1
 let g:ycm_server_keep_logfiles = 1
