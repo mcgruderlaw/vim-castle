@@ -215,7 +215,7 @@ endif
 
 " Evervim
 "let g:evervim_devtoken set in ~/.vim/evervim/evervim.vim for security
-source ~/.vim/evervim/evervim.vim
+source $HOME/.vim/evervim/evervim.vim
 nnoremap <silent> <leader>el :<C-u>EvervimNotebookList<CR>
 nnoremap <silent> <leader>eT :<C-u>EvervimListTags<CR>
 nnoremap <silent> <leader>en :<C-u>EvervimCreateNote<CR>
