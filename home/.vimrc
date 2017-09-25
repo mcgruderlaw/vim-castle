@@ -7,12 +7,12 @@ call vundle#begin()
 Plugin 'airblade/vim-gitgutter'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'amperser/proselint', {'rtp': 'plugins/vim/syntastic_proselint/'}
-Plugin 'astrumas/evervim'
 Plugin 'gerw/vim-latex-suite'
 Plugin 'gerw/vim-tex-syntax'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'klen/python-mode'
+Plugin 'neilagabriel/vim-geeknote'
 Plugin 'ron89/thesaurus_query.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'SirVer/ultisnips'
@@ -344,7 +344,7 @@ set background=dark
 "g:solarized_contrast = "normal"| "high" or "low"
 "g:solarized_visibility= "normal"| "high" or "low"
 call togglebg#map("<F8>")
-colorscheme solarized
+colorscheme hipster
 "LuciusDarkHighContrast
 
 "solarized hemisu noctu hipster lucius skittles_dark elflord badwolf starbucks molokai Tomorrow
