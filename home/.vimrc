@@ -180,21 +180,14 @@ if version >= 700
   hi SpellLocal  cterm=None
 endif
 
-" Evervim
-"let g:evervim_devtoken set in ~/.vim/evervim/evervim.vim for security
-source $HOME/.vim/evervim/evervim.vim
-nnoremap <silent> <leader>el :<C-u>EvervimNotebookList<CR>
-nnoremap <silent> <leader>eT :<C-u>EvervimListTags<CR>
-nnoremap <silent> <leader>en :<C-u>EvervimCreateNote<CR>
-nnoremap <silent> <leader>eB :<C-u>EvervimOpenBrowser<CR>
-nnoremap <silent> <leader>ec :<C-u>EvervimOpenClient<CR>
-nnoremap <leader>es :<C-u>EvervimSearchByQuery<SPACE>
-nnoremap <leader>af :<C-u>EvervimSearchByQuery Affirmation<CR>
-nnoremap <leader>wf :<C-u>EvervimSearchByQuery My Workflow<CR>
-nnoremap <silent> <leader>et :<C-u>EvervimSearchByQuery<SPACE>tag:1-Now,tag:2-Next,tag:3-Soon<CR>
-nnoremap <silent> <leader>etl :<C-u>EvervimSearchByQuery<SPACE>tag:4-Later -tag:5-Someday<CR>
-"let g:evervim_splitoption=''
-let g:evervim_usermarkdown='1'
+"Geeknote
+	nnoremap <leader>gn :Geeknote<CR>
+	nnoremap <leader>gnn :GeeknoteCreateNote<SPACE>
+	nnoremap <leader>gns :GeeknoteSaveAsNote<CR>
+	nnoremap <leader>gny :GeeknoteSync<CR>
+	nnoremap <leader>gnf :GeeknoteSearch<CR>
+	nnoremap <leader>gna :GeeknoteSearch<SPACE>Affirmation<CR>
+	nnoremap <leader>gnw :GeeknoteSearch<SPACE>My Workflow<CR>
 
 "open-browswer
 let g:openbrowser_default_search = "duckduckgo"
