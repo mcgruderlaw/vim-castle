@@ -22,8 +22,8 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-vinegar'
 Plugin 'tyru/open-browser.vim'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'vim-pandoc/vim-pandoc'
-Plugin 'vim-pandoc/vim-pandoc-syntax'
+"Plugin 'vim-pandoc/vim-pandoc'
+"Plugin 'vim-pandoc/vim-pandoc-syntax'
 Plugin 'vim-scripts/ag.vim'
 Plugin 'vim-scripts/Gundo'
 Plugin 'xolox/vim-easytags'
@@ -185,7 +185,7 @@ endif
 	nnoremap <leader>gnn :GeeknoteCreateNote<SPACE>
 	nnoremap <leader>gns :GeeknoteSaveAsNote<CR>
 	nnoremap <leader>gny :GeeknoteSync<CR>
-	nnoremap <leader>gnf :GeeknoteSearch<CR>
+	nnoremap <leader>gnf :GeeknoteSearch<SPACE>
 	nnoremap <leader>gna :GeeknoteSearch<SPACE>Affirmation<CR>
 	nnoremap <leader>gnw :GeeknoteSearch<SPACE>My Workflow<CR>
 
@@ -271,7 +271,7 @@ let g:pandoc#command#autoexec_on_writes = 0
 let g:pandoc#command#latex_engine = "pdflatex"
 let g:pandoc#formatting#smart_autoformat_on_cursormoved = 0
 let g:pandoc#command#autoexec_command = "Pandoc pdf"
-let g:pandoc#formatting#mode = "sA"
+let g:pandoc#formatting#mode = "h"
 let g:pandoc#formatting#textwidth = 79
 let g:pandoc#formatting#equalprg = "pandoc -t markdown --reference-links [--columns {g:pandoc#formatting#textwidth}|--wrap=none]"
 let g:pandoc#spell#enabled = 1
@@ -337,7 +337,7 @@ set background=dark
 "g:solarized_contrast = "normal"| "high" or "low"
 "g:solarized_visibility= "normal"| "high" or "low"
 call togglebg#map("<F8>")
-colorscheme hipster
+colorscheme solarized
 "LuciusDarkHighContrast
 
 "solarized hemisu noctu hipster lucius skittles_dark elflord badwolf starbucks molokai Tomorrow
@@ -529,6 +529,8 @@ let g:pymode_syntax_docstrings = g:pymode_syntax_all
 
 autocmd FileType tex :setlocal spell spelllang=en_us
 autocmd FileType tex :setlocal tw=70
+autocmd FileType markdown :setlocal tw=70
+autocmd FileType geeknote :setlocal tw=70
 " autocmd BufEnter,WinEnter,FocusGained * :setlocal number relativenumber
 " autocmd WinLeave,FocusLost   * :setlocal number norelativenumber
 " autocmd BufNew,InsertEnter * :set number
