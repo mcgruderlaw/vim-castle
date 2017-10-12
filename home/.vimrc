@@ -271,7 +271,7 @@ let g:pandoc#command#autoexec_on_writes = 0
 let g:pandoc#command#latex_engine = "pdflatex"
 let g:pandoc#formatting#smart_autoformat_on_cursormoved = 0
 let g:pandoc#command#autoexec_command = "Pandoc pdf"
-let g:pandoc#formatting#mode = "sA"
+let g:pandoc#formatting#mode = "h"
 let g:pandoc#formatting#textwidth = 79
 let g:pandoc#formatting#equalprg = "pandoc -t markdown --reference-links [--columns {g:pandoc#formatting#textwidth}|--wrap=none]"
 let g:pandoc#spell#enabled = 1
@@ -531,6 +531,7 @@ let g:pymode_syntax_docstrings = g:pymode_syntax_all
 autocmd FileType tex :setlocal spell spelllang=en_us
 autocmd FileType tex :setlocal tw=70
 autocmd FileType markdown :setlocal tw=70
+autocmd FileType geeknote :setlocal tw=70
 " autocmd BufEnter,WinEnter,FocusGained * :setlocal number relativenumber
 " autocmd WinLeave,FocusLost   * :setlocal number norelativenumber
 " autocmd BufNew,InsertEnter * :set number
