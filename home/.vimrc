@@ -187,6 +187,7 @@ endif
 	nnoremap <leader>gny :GeeknoteSync<CR>
 	nnoremap <leader>gnf :GeeknoteSearch<SPACE>
 	nnoremap <leader>gna :GeeknoteSearch<SPACE>Affirmation<CR>
+	nnoremap <leader>gnt :GeeknoteSearch<SPACE>Thoughts<CR>
 	nnoremap <leader>gnw :GeeknoteSearch<SPACE>My Workflow<CR>
 
 "open-browswer
