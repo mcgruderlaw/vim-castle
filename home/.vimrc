@@ -7,6 +7,7 @@ call vundle#begin()
 Plugin 'airblade/vim-gitgutter'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'amperser/proselint', {'rtp': 'plugins/vim/syntastic_proselint/'}
+Plugin 'dbext.vim'
 Plugin 'gerw/vim-latex-suite'
 Plugin 'gerw/vim-tex-syntax'
 Plugin 'gmarik/Vundle.vim'
