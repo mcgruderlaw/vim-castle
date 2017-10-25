@@ -655,7 +655,9 @@ map <leader>yt :exec '!cd ~/Downloads; youtube-dl ' . shellescape(getline('.')) 
 map <leader>wg :exec '!cd ~/Downloads; wget -c ' . shellescape(getline('.')) <CR><CR>
 
 " DBExt Profile
-let g:dbext_default_profile_usual = 'type=mysql:user=root'
+let g:dbext_default_profile_usual = 'type=MYSQL:user=root:passwd=:dbname=mysql:extra=-t'
+let g:dbext_default_buffer_lines = 7
+let g:DBI_max_column_width = 90
 
 " source /home/dmc/scripts/executesql.vim
 
