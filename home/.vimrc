@@ -41,9 +41,9 @@ set cursorline          " highlight current line
 " set statusline+=%F
 " set statusline=%<\ %n:%F\ %m%r%y%=%-40.(line:\ %l\ of\ %L,\ col:\ %c%V\ (%P)%)
 " set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}
-" set statusline=[%n]\ %<%F\ \ \ [%M%R%H%W%Y][%{&ff}]\ \ %=\ line:%l/%L\ col:%c\ \ \ %p%%\ \ \ @%{strftime(\"%H:%M:%S\")}
+set statusline=[%n]\ %<%F\ \ \ [%M%R%H%W%Y][%{&ff}]\ \ %=\ line:%l/%L\ col:%c\ \ \ %p%%\ \ \ @%{strftime(\"%H:%M:%S\")}
 " set statusline=[%n]\ %<%f\ \ \ [%M%R%H%W%Y]\ \ %=\ %l,%L\ \ \ %c\ \ \ %p%%
-set statusline=\"%f\"\ \ \ %m%r%h%w%y\ \ %=\ %l,%L\ \ \ %c\ \ \ %p%%
+""""""set statusline=\"%f\"\ \ \ %m%r%h%w%y\ \ %=\ %l,%L\ \ \ %c\ \ \ %p%%
 "    set statusline+=%#warningmsg#
 "    set statusline+=%{SyntasticStatuslineFlag()}
 "    set statusline+=%*
@@ -286,7 +286,7 @@ set number
 "set relativenumber
 "set rulerformat=%55(%{strftime('%a\ %b\ %e\ %I:%M\ %p')}\ %5l,%-6(%c%V%)\%P%)
 
-set laststatus=0
+set laststatus=2
 set list
 set listchars=tab:→\ ,eol:¬
 "set listchars=eol:$
