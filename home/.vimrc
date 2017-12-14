@@ -16,7 +16,7 @@ Plugin 'python-mode/python-mode'
 Plugin 'https://github.com/neilagabriel/vim-geeknote'
 Plugin 'ron89/thesaurus_query.vim'
 Plugin 'scrooloose/syntastic'
-Plugin 'SirVer/ultisnips'
+"Plugin 'SirVer/ultisnips'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-obsession'
 Plugin 'tpope/vim-surround'
@@ -110,7 +110,7 @@ set path+=**
 "set statusline+=%{SyntasticStatuslineFlag()}
 "set statusline+=%*
 
-let g:vundle_default_git_proto = 'ssh'
+let g:vundle_default_git_proto = 'https'
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
