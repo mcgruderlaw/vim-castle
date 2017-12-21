@@ -16,7 +16,7 @@ Plugin 'python-mode/python-mode'
 Plugin 'https://github.com/neilagabriel/vim-geeknote'
 Plugin 'ron89/thesaurus_query.vim'
 Plugin 'scrooloose/syntastic'
-Plugin 'SirVer/ultisnips'
+"Plugin 'SirVer/ultisnips'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-obsession'
 Plugin 'tpope/vim-surround'
@@ -110,7 +110,7 @@ set path+=**
 "set statusline+=%{SyntasticStatuslineFlag()}
 "set statusline+=%*
 
-let g:vundle_default_git_proto = 'ssh'
+"let g:vundle_default_git_proto = 'ssh'
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
@@ -154,7 +154,7 @@ nnoremap <leader>lp :!pdflatex %<cr>
 nnoremap <leader>tt :TTarget<CR>
 nnoremap <leader>TT :TTemplate<CR>
 nnoremap <leader>sp :!aspell check %<CR>
-nnoremap <leader>ca :e $HOME/Documents/ofc/Cases/<CR>
+nnoremap <leader>ca :e $CASES/<CR>
 nnoremap <leader>ho :e $HOME/.homesick/repos/<CR>
 nnoremap <leader>no :e $HOME/Documents/Notes/<CR>
 nnoremap / /\v
@@ -537,7 +537,7 @@ let g:pymode_syntax_docstrings = g:pymode_syntax_all
 autocmd FileType tex :setlocal spell spelllang=en_us
 autocmd FileType tex :setlocal tw=70
 autocmd FileType markdown :setlocal tw=70
-autocmd FileType geeknote :setlocal tw=70
+" autocmd FileType geeknote :setlocal tw=70
 " autocmd BufEnter,WinEnter,FocusGained * :setlocal number relativenumber
 " autocmd WinLeave,FocusLost   * :setlocal number norelativenumber
 " autocmd BufNew,InsertEnter * :set number
@@ -782,7 +782,7 @@ function! Pleading()
 python << endPython
 
 import shutil
-shutil.copytree('/home/dmc/Documents/ofc/capdocs5/Pleadings', 'newdoc')
+shutil.copytree('/home/dmc/Documents/ofc/capdocs/Pleadings', 'newdoc')
 
 endPython
 endfunction
@@ -792,7 +792,7 @@ function! Discovery()
 python << endPython
 
 import shutil
-shutil.copytree('/home/dmc/Documents/ofc/capdocs5/Discovery', 'newdoc')
+shutil.copytree('/home/dmc/Documents/ofc/capdocs/Discovery', 'newdoc')
 
 endPython
 endfunction
@@ -802,7 +802,7 @@ function! Motion()
 python << endPython
 
 import shutil
-shutil.copytree('/home/dmc/Documents/ofc/capdocs5/Motions', 'newdoc')
+shutil.copytree('/home/dmc/Documents/ofc/capdocs/Motions', 'newdoc')
 
 endPython
 
@@ -827,7 +827,7 @@ python << endPython
 
 import glob, os, shutil
 
-shutil.copytree('/home/dmc/Documents/ofc/ltr', 'ltr', ignore = shutil.ignore_patterns('.*'))
+shutil.copytree('/home/dmc/ofc/ltr', 'ltr', ignore = shutil.ignore_patterns('.*'))
 
 endPython
 endfunction
@@ -837,7 +837,7 @@ function! Memo()
 python << endPython
 
 import shutil
-shutil.copytree('/home/dmc/Documents/ofc/memo', 'memo')
+shutil.copytree('/home/dmc/ofc/memo', 'memo')
 
 endPython
 endfunction
@@ -847,7 +847,7 @@ function! MindMap()
 python << endPython
 
 import shutil
-shutil.copytree('/home/dmc/Documents/ofc/notes', 'note')
+shutil.copytree('/home/dmc/ofc/notes', 'note')
 
 endPython
 endfunction
