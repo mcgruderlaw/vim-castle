@@ -65,6 +65,7 @@ set omnifunc=syntaxcomplete#Complete
 set path=.,/home/dmc,/etc/portage
 set path+=**
 set diffopt=vertical
+set previewheight=9
 
 " follow symlinked file
 " function! FollowSymlink()
