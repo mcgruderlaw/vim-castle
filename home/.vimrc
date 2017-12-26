@@ -64,7 +64,7 @@ set complete=.,k,w,b,u,t,i
 set omnifunc=syntaxcomplete#Complete
 set path=.,/home/dmc,/etc/portage
 set path+=**
-
+set diffopt=vertical
 
 " follow symlinked file
 " function! FollowSymlink()
