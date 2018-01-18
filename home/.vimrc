@@ -211,9 +211,6 @@ let g:netrw_nogx = 1 " disable netrw's gx mapping.
 let g:netrw_rsync_cmd="rsync -a --delete -e ssh"
 let g:netrw_sizestyle="H"
 
-nnoremap gx <Plug>(openbrowser-smart-search)
-vnoremap gx <Plug>(openbrowser-smart-search)
-
 function! OpenBrowserLine()
         let matched = matchlist(getline("."), 'https\?://[0-9A-Za-z_#?~=\-+%\.\/:]\+')
         if len(matched) == 0
