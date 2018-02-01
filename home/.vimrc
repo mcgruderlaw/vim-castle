@@ -57,7 +57,7 @@ set foldmethod=indent   " fold based on indent level
 set showcmd
 set pastetoggle=<F2>
 set clipboard=unnamed
-set noequalalways
+"set noequalalways
 set equalprg=''
 set incsearch
 set complete=.,k,w,b,u,t,i
@@ -252,7 +252,7 @@ let g:airline#extensions#tabline#buffer_nr_show = 1
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 au BufEnter,BufRead *.py setlocal smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 
-set shellslash
+"set shellslash
 set grepprg=grep\ -nH\ $*
 set sw=2
 let g:tex_flavor='latex'
@@ -265,7 +265,8 @@ let g:tex_flavor='latex'
 let g:Tex_DefaultTargetFormat = 'pdf'
 let g:Tex_CompileRule_pdf = 'pdflatex --synctex=-1 -src-specials -interaction=nonstopmode $*'
 let g:Tex_MultipleCompileFormats='dvi,pdf'
-let g:Tex_ViewRule_pdf = 'zathura'
+let g:Tex_ViewRule_pdf = 'xpdf'
+"let g:Tex_ViewRuleComplete_pdf = 'zathura $*'
 let g:Tex_GotoError = 1
 let g:Tex_CustomTemplateDirectory = '/home/dmc/.latex_templates'
 
@@ -294,9 +295,9 @@ set showcmd
 set wildmode=list:longest,list:full
 " Necessary order
 set linebreak
-set textwidth=0
+set textwidth=79
 set display=lastline
-set formatoptions=tcq
+set formatoptions=tcqn
 " set wrapmargin=5
 
 "Nerdtree opens automatically if no files specified
@@ -780,7 +781,7 @@ function! Pleading()
 python << endPython
 
 import shutil
-shutil.copytree('/home/dmc/Documents/ofc/capdocs/Pleadings', 'newdoc')
+shutil.copytree('/home/dmc/ofc/capdocs/Pleadings', 'newdoc')
 
 endPython
 endfunction
@@ -790,7 +791,7 @@ function! Discovery()
 python << endPython
 
 import shutil
-shutil.copytree('/home/dmc/Documents/ofc/capdocs/Discovery', 'newdoc')
+shutil.copytree('/home/dmc/ofc/capdocs/Discovery', 'newdoc')
 
 endPython
 endfunction
@@ -800,7 +801,7 @@ function! Motion()
 python << endPython
 
 import shutil
-shutil.copytree('/home/dmc/Documents/ofc/capdocs/Motions', 'newdoc')
+shutil.copytree('/home/dmc/ofc/capdocs/Motions', 'newdoc')
 
 endPython
 
