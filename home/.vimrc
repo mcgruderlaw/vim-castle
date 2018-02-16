@@ -56,8 +56,10 @@ set foldnestmax=10      " 10 nested fold max
 set foldmethod=indent   " fold based on indent level
 set showcmd
 set pastetoggle=<F2>
-set clipboard=unnamed
-set noequalalways
+if $TMUX == ''
+  set clipboard+=unnamed
+endif
+set equalalways
 set equalprg=''
 set incsearch
 set complete=.,k,w,b,u,t,i
