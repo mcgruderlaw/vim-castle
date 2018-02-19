@@ -258,7 +258,7 @@ au BufEnter,BufRead *.py setlocal smartindent cinwords=if,elif,else,for,while,tr
 set grepprg=grep\ -nH\ $*
 set sw=2
 let g:tex_flavor='latex'
-"let g:Tex_CompileRule_dvi = 'latex --interaction=nonstopmode $*'
+let g:Tex_CompileRule_dvi = 'latex --interaction=nonstopmode $*'
 "let g:Tex_CompileRule_ps = 'dvips -Ppdf -o $*.ps $*.dvi'
 "let g:Tex_CompileRule_pdf = 'ps2pdf $*.ps'
 
@@ -267,8 +267,8 @@ let g:tex_flavor='latex'
 let g:Tex_DefaultTargetFormat = 'pdf'
 let g:Tex_CompileRule_pdf = 'pdflatex --synctex=-1 -src-specials -interaction=nonstopmode $*'
 let g:Tex_MultipleCompileFormats='dvi,pdf'
-let g:Tex_ViewRule_pdf = 'xpdf'
-"let g:Tex_ViewRuleComplete_pdf = 'zathura $*'
+let g:Tex_ViewRule_pdf = '/usr/bin/zathura'
+let g:Tex_ViewRuleComplete_pdf = '/usr/bin/zathura "$*" &'
 let g:Tex_GotoError = 1
 let g:Tex_CustomTemplateDirectory = '/home/dmc/.latex_templates'
 
