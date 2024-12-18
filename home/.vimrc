@@ -332,7 +332,7 @@ set tabstop=4       " number of visual spaces per TAB
 
 "let g:solarized_termcolors=256
  
-set background=dark
+set background=light
 "g:solarized_termcolors = 16
 "g:solarized_termtrans = 1
 "g:solarized_degrade = 0 | 1 
